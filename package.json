@@ -1,0 +1,34 @@
+{
+  "name": "legacy-code-map",
+  "version": "0.1.0",
+  "description": "Map dependencies and migration chokepoints in legacy code: X++, SQL, PL/SQL, COBOL, RPG, ABAP, VB6, Delphi, Progress, C#, Java, Python, JS and PHP. Runs locally.",
+  "bin": {
+    "legacy-code-map": "bin/legacy-code-map.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "esbuild src/cli.ts --bundle --platform=node --target=node18 --outfile=bin/legacy-code-map.js"
+  },
+  "keywords": [
+    "dynamics-ax",
+    "x++",
+    "d365",
+    "cobol",
+    "rpg",
+    "abap",
+    "vb6",
+    "legacy-modernization",
+    "erp-migration",
+    "dependency-graph"
+  ],
+  "license": "MIT",
+  "homepage": "https://scan.tolmansolutions.com",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  }
+}
